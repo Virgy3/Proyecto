@@ -1,0 +1,178 @@
+/* PANTALLA DE COMPRA */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E8DAEF;
+    color: #555;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor Principal Flex */
+.container-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 20px;
+}
+
+/* Estilo para los Fieldsets */
+fieldset {
+    background: #FEF9E7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px;
+    flex: 1 1 45%;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+/* Encabezados dentro de Fieldsets */
+h2.encabezado {
+    color: #6C3483;
+    margin-bottom: 20px;
+}
+
+/* Estilos para campos de entrada y sus etiquetas */
+.input-field label,
+.input-field input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-field input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para la sección de métodos de pago */
+.imagen-pago {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Estilo para cada opción de pago */
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-option img {
+    width: 80px;
+    height: auto;
+}
+
+/* Botones y sus estados interactivos */
+.boton,
+button {
+    background-color: #AF7AC5;
+    color: white;
+	font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	text-decoration: none;
+}
+
+.boton:hover,
+button:hover {
+    background-color: #4A6881;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* CONFIRMA PAGO */
+
+.message-exito {
+    color: #28a745; /* Verde para éxito */
+    background-color: #e2f8e8;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.message-fallo {
+    color: #dc3545; /* Rojo para errores */
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.message-noti {
+    color: #17a2b8; /* Azul para información */
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+
+/*BUSQUEDA DE PRODUCTOS */
+
+.message-container {
+    text-align: center; /* Centra el contenido del contenedor */
+    padding: 20px;
+    margin: 20px auto; /* Centra el contenedor en la página */
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 600px; /* Ajusta según necesidades */
+}
+
+.message-alert {
+    color: #dc3545; /* Rojo para errores */
+    font-size: 18px; /* Tamaño de fuente grande para mejor visibilidad */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.message-info {
+    color: #17a2b8; /* Azul para información */
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.boton2 {
+    display: inline-block;
+    background-color: #A569BD;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Añade un espacio sobre el botón */
+    transition: background-color 0.3s;
+    text-align: center; /* Asegura que el texto dentro del botón esté centrado */
+}
+
+.boton2:hover {
+    background-color: #1F618D ; /* Un tono más oscuro al pasar el ratón */
+}

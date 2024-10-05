@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Página de Productos</title>
+	<link rel="stylesheet" type="text/css" href="../views/estilosProductos.css">
+
+</head>
+
+	<body>
+	<!-- Cabecera de la página -->
+		<div class="header">
+			<span><h2>Productos</h2></span>
+			<ul>
+				<li><a href="../views/index.php">Inicio</a></li>
+				<li><a href="../models/sesion.php">Registro</a></li>
+				<li><a href="../views/formUser.html">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<!-- Caja derecha con imágenes del producto -->
+			<div class="right-box">
+				 <!-- Caja para la imagen principal del producto -->
+				<div class="main-image-box">
+					<img src="" id="mainImage" class="main-image">
+				</div>
+				<div class="small-images"> <!-- Gestiona las imágenes pequeñas de la página productos -->
+					
+					<div class="image-box"><img src="" class="image"></div>
+					<div class="image-box"><img src="" class="image"></div>
+				
+				</div>
+			</div>
+			 <!-- Detalles del producto con formulario de compra -->
+			<div class="details-box">
+			
+			<form action="../controllers/realizarCompra.php" method="POST">	
+				 
+				<input type="hidden" name="id_producto" id="formProductoId" value="">
+				
+				<h1 id="productoNombre">Nombre del producto</h1>
+				<p id="productoStock"> Disponible (En Stock)</p>
+				<h3 id="productoPrecio" data-precio="">Precio</h3>
+				<!-- Tabla para la entrada de datos de la compra como cantidad y cálculos de precios -->
+				<table cellspacing="0" class="inputs">
+					<tr>
+						<td>Cantidad</td>
+						<td align="right"><input type="number" name="cantidad" id="first" step="0.01"></td>
+					</tr>
+					<tr>
+						<td>Sub Total</td>
+						<td align="right"><input type="number" id="second" step="0.01"></td>
+					</tr>
+					<tr>
+						<td> Venta IVA 21%</td>
+						<td align="right"><input type="number" id="third" step="0.01"></td>
+					</tr>
+					<tr>
+						<td>TOTAL</td>
+						<td align="right"><input type="number" name="precio" id="fourth" step="0.01"></td>
+					</tr>
+				</table>
+				<h4 id="descripcion">Descripción</h4>		
+				<h4 id="categoria">Categoría</h4>
+			
+			<!-- Botón para realizar la compra -->
+			<input class="button" type="submit" name="comprar" value="Comprar"><br><br><br>
+			
+			</form>	
+		</div>
+	</div>
+		<!-- Script para manejar la funcionalidad dinámica y cargar imágenes por su id_producto -->
+		<script defer src="../views/productoUnidad.js"></script>
+		
+	</body>
+
+</html>

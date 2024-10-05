@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Formulario de cambios y cancelaciones</title>
+	<link rel="stylesheet" type="text/css" href="../views/formularios.css">
+	
+</head>
+
+	<body>
+
+		<div class="container3">
+	<!-- Formulario de contacto para que el cliente pueda contactar con el soporte de la página -->	
+		<h1>Formulario de Contacto</h1>
+		
+			<form action="../views/confirmaForm.html" method="POST">
+			
+				<p><label for="name">Nombre y apellidos</label></p>
+				<input class="inputdoble" type="text" name="name" id="name">
+				
+				<p><label for="email">Email</label></p>
+				<input class="inputdoble" type="email" name="email" id="email">
+				
+				<p><label for="reason">Coméntanos tu duda o incidencia</label></p>
+				<textarea id="reason" name="reason" rows="4" cols="50" placeholder="Escribe aquí tu motivo"></textarea>
+				
+				<p><input type="checkbox" name="compra" value="aceptaPrivacidad"> Acepto la <b>política de privacidad</b></p>
+				
+				<p><input class="button" type="submit" name="commit" value="Enviar"></p><br><br>
+				
+			</form>
+				
+					<form action="../views/index.php" method="POST">
+				
+						<input class="button" type="submit" value="Volver">
+					
+					</form>
+			
+			
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,63 @@
+
+/* GUIA COMPRA */
+
+body{
+	background-color: #E8DAEF;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+	
+}
+
+h1 {
+	text-align: left;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.info-section {
+    background-color: #FCF3CF;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+	text-align: justify;
+	font-size: 18px;
+}
+
+.info-section2 {
+	background-color: #FCF3CF;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+	text-align: justify;
+	font-size: 18px;
+}
+
+p, li {
+    line-height: 1.6;
+	font-size: 18px;
+ }
+ 
+
+.button-link {
+    display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
+    padding: 10px 20px; /* Añade relleno alrededor del texto */
+    margin: 10px 0; /* Espacio superior e inferior para separación */
+    background-color: #AF7AC5; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s; /* Suaviza la transición de color */
+}
+
+.button-link:hover, .button-link:focus {
+    background-color: #4A6881; /* Cambia el color de fondo al pasar el ratón */
+    color: #FFF; /* Mantiene el color del texto en blanco */
+    text-decoration: none; /* Asegura que no hay subrayado al pasar el ratón */
+}

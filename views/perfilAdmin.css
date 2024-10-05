@@ -1,0 +1,71 @@
+/* PERFIL ADMINISTRADOR */
+
+body {
+    font-family: Arial, sans-serif; /* Define una fuente clara y legible */
+    background: #E8DAEF; /* Un tono suave de morado para el fondo */
+    color: #555; /* Color de texto general */
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    width: 100%; /* Ajusta esto según tus necesidades de diseño */
+    border-collapse: collapse; /* Elimina el espacio entre las celdas */
+    margin: auto; /* Centra la tabla horizontalmente y da espacio vertical */
+    background: #FFF; /* Fondo blanco para las tablas */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Sombra sutil para la tabla */
+}
+
+th, td {
+    padding: 8px; /* Padding para las celdas de la tabla */
+    text-align: left; /* Alineación del texto */
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre filas */
+}
+
+
+
+th {
+    background-color: #FEF9E7; /* Color de fondo para las cabeceras de tabla */
+    color: #555; /* Color del texto para las cabeceras */
+}
+
+tr:hover {
+    background-color: #D6EAF8; /* Color de fondo al pasar el ratón por las filas */
+}
+
+a {
+    color: #5C85AD;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el ratón */
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd; /* Borde sutil para el select */
+    background: #ffffff; /* Fondo blanco para el select */
+}
+
+input[type="submit"], input[type="button"], .button-link {
+    background-color: #AF7AC5; /* Fondo morado para botones */
+    color: white; /* Texto blanco en botones */
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 8px; /* Espacio arriba del botón */
+    transition: background-color 0.3s; /* Transición suave de color de fondo */
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, .button-link:hover {
+    background-color: #4A6881; /* Cambio de color en hover */
+}
+
+h1 {
+    color: #6C3483;
+   
+}

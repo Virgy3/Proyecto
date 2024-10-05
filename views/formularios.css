@@ -1,0 +1,274 @@
+/* FORMULARIO SESIÓN */
+ 
+body {
+    font-family: Arial, sans-serif;
+    background: #E8DAEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.contenedor1 {
+    background: #FEF9E7;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="email"], input[type="password"], input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #AF7AC5;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4A6881;
+}
+
+a {
+   color: #5C85AD;
+   text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.mensaje-admin, .mensaje-usuario, .mensaje-error {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.mensaje-admin {
+    background-color:#D68910; /* Naranja para admin */
+}
+
+.mensaje-usuario {
+    background-color: #2196F3; /* Azul para usuarios registrados */
+}
+
+.mensaje-error {
+    background-color: #f44336; /* Rojo para errores o acciones importantes */
+}
+
+.mensaje-admin a, .mensaje-usuario a, .mensaje-error a {
+    color: #FFFF00; /* Amarillo para los enlaces, para que contrasten bien */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mensaje-admin a:hover, .mensaje-usuario a:hover, .mensaje-error a:hover {
+    text-decoration: underline; /* Restaura el subrayado al pasar el ratón */
+}
+
+		
+		
+/* REGISTRO.PHP */
+
+h3 {
+	color: #884EA0;
+}
+
+.contenedor2, .formulario {
+    background: #FEF9E7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 530px; /* Aumentado para acomodar más contenido */
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre mensajes de error */
+}
+
+input[type="text"], input[type="date"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho final */
+}
+
+
+/* LOGOUT */
+
+.contenedor-sesion {
+    background: #FEF9E7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 450px;
+}
+
+.mensaje-sesion {
+    color: #555;
+    font-size: 16px; /* Tamaño de fuente para el mensaje */
+    padding: 10px; /* Espacio alrededor del texto */
+    margin-bottom: 20px; /* Espacio debajo del mensaje */
+}
+
+
+/* FORM USER CONTACTO */
+
+
+.container3 {
+    background: #FEF9E7;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 600px; /* Ajuste del ancho máximo para adaptarse al contenido */
+    margin: 20px auto; /* Centrado y margen vertical */
+    text-align: center;
+}
+
+.inputdoble {
+    width: calc(100% - 20px); /* Resta del padding para que el input no se salga del contenedor */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+   
+	width: 560px; /* Ancho fijo en píxeles */
+    height: 120px; /* Altura fija en píxeles */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none; /* Evita que el usuario cambie el tamaño del textarea */
+}
+
+.button {
+    background-color: #AF7AC5; /* Estilo de botón coherente con el sitio */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.button:hover {
+    background-color: #4A6881; /* Cambio de color en hover */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+h1 {
+    color: #6C3483;
+    margin-bottom: 20px;
+}
+
+
+
+/* CONFIRM FORM CONTACTO */
+
+.contenedor4 {
+    background: #FEF9E7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 95%;
+    max-width: 400px;
+    margin: 20px auto; /* Centra el contenedor vertical y horizontalmente */
+    text-align: center;
+}
+
+.contenedor4 h3 {
+    color: #6C3483;
+    margin-bottom: 10px;
+}
+
+.contenedor4 p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contenedor4 a {
+    color: #5C85AD;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.contenedor4 a:hover {
+    text-decoration: underline;
+}
+
+
+/* ACERCA DE */
+
+.contenedor5 {
+    background: #FEF9E7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 550px;
+    margin: 30px auto; /* Centra el contenedor vertical y horizontalmente */
+    text-align: center;
+}
+
+.contenedor5 h1{
+    color: #6C3483;
+    margin-bottom: 15px;
+}
+
+.contenedor5 h3{
+    color: black;
+    margin-bottom: 15px;
+}
+
+.contenedor5 p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contenedor5 a {
+    color: #5C85AD;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.contenedor5 a:hover {
+    text-decoration: underline;
+}
